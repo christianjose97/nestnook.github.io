@@ -3997,3 +3997,10 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
+	.property-box img.property-image {
+		width: 100%; /* Ensures the image fits the width of the box */
+		height: 200px; /* Sets a fixed height for the image */
+		object-fit: cover; /* Ensures the image fills the box without distortion */
+		border-radius: 8px; /* Optional: Adds rounded corners for a polished look */
+	  }
