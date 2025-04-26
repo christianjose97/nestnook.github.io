@@ -4000,7 +4000,22 @@ input, select, textarea {
 
 	.property-box img.property-image {
 		width: 100%; /* Ensures the image fits the width of the box */
-		height: 200px; /* Sets a fixed height for the image */
+		height: 550px; /* Sets a fixed height for the image */
 		object-fit: cover; /* Ensures the image fills the box without distortion */
 		border-radius: 8px; /* Optional: Adds rounded corners for a polished look */
 	  }
+
+	  
+	  .features li img.feature-icon {
+		width: 30px; /* Adjust the size of the icon */
+		height: 30px; /* Ensure the icon is square */
+		margin-bottom: 0 rem; /* Add spacing between the icon and text */
+	  }
+
+	  .box-link {
+		text-decoration: none; /* Removes any underline or dashes */
+		display: block; /* Ensures the link behaves as a block-level element */
+	  }
+	  
+
+	  
