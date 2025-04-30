@@ -133,8 +133,7 @@
 
           </div>
         </section>
-
-		<!--The space section -->
+		
 		<!-- The Space Section -->
 		<section class="wrapper style5">
 			<div class="inner">
@@ -192,6 +191,140 @@
 			</div>
 		</section>
       </article>
+
+	<!-- Amenities Section -->
+	<section class="wrapper style5">
+		<div class="inner">
+			<h2 style="color: black;">Full List of Amenities</h2>
+			<div class="amenities-grid">
+				<div class="amenity-box">
+					<i class="icon solid fa-wifi"></i>
+					<p style="color: black;">High-Speed Internet</p>
+				</div>
+				<div class="amenity-box">
+					<i class="icon solid fa-tv"></i>
+					<p style="color: black;">Smart TV</p>
+				</div>
+				<div class="amenity-box">
+					<i class="icon solid fa-utensils"></i>
+					<p style="color: black;">Fully Equipped Kitchen</p>
+				</div>
+				<div class="amenity-box">
+					<i class="icon solid fa-coffee"></i>
+					<p style="color: black;">Coffee Maker</p>
+				</div>
+				<div class="amenity-box">
+					<i class="icon solid fa-car"></i>
+					<p style="color: black;">Parking Space</p>
+				</div>
+				<div class="amenity-box">
+					<i class="icon solid fa-paw"></i>
+					<p style="color: black;">Pet-Friendly</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<style>
+		.amenities-grid {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			gap: 20px;
+			margin-top: 20px;
+		}
+		.amenity-box {
+			text-align: center;
+			width: 120px;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			background-color: #f9f9f9;
+		}
+		.amenity-box i {
+			font-size: 2rem;
+			color: #333;
+			margin-bottom: 10px;
+		}
+		.amenity-box p {
+			margin: 5px 0;
+		}
+	</style>
+
+	<!-- Gallery Section -->
+	<section class="wrapper style5</section>">
+		<div class="inner">
+			<h2>Gallery</h2>
+			<div class="gallery-grid">
+				<div class="gallery-item">
+					<img src="../images/living-room.jpg" alt="Living Room" />
+					<p>Living Room section has a couch coffe table tv etc.</p>
+				</div>
+				<div class="gallery-item">
+					<img src="../images/kitchen.jpg" alt="Kitchen" />
+					<p>Kitchen</p>
+				</div>
+				<div class="gallery-item">
+					<img src="../images/bedroom.jpg" alt="Bedroom" />
+					<p>Bedroom</p>
+				</div>
+				<div class="gallery-item">
+					<img src="../images/bathroom.jpg" alt="Bathroom" />
+					<p>Bathroom</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<style>
+		.gallery-grid {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			gap: 20px;
+			margin-top: 20px;
+		}
+		.gallery-item {
+			text-align: center;
+			width: 200px;
+			transition: transform 0.3s ease;
+		}
+		.gallery-item img {
+			width: 100%;
+			height: auto;
+			border-radius: 8px;
+			cursor: pointer;
+		}
+		.gallery-item:hover {
+			transform: scale(1.05);
+		}
+		.gallery-item p {
+			margin-top: 10px;
+			font-size: 1rem;
+			color: #333;
+		}
+	</style>
+
+	<script>
+		document.querySelectorAll('.gallery-item img').forEach(img => {
+			img.addEventListener('click', () => {
+				const fullImage = document.createElement('div');
+				fullImage.style.position = 'fixed';
+				fullImage.style.top = '0';
+				fullImage.style.left = '0';
+				fullImage.style.width = '100%';
+				fullImage.style.height = '100%';
+				fullImage.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+				fullImage.style.display = 'flex';
+				fullImage.style.justifyContent = 'center';
+				fullImage.style.alignItems = 'center';
+				fullImage.style.zIndex = '1000';
+				fullImage.innerHTML = `<img src="${img.src}" style="max-width: 90%; max-height: 90%; border-radius: 8px;" />`;
+				fullImage.addEventListener('click', () => document.body.removeChild(fullImage));
+				document.body.appendChild(fullImage);
+			});
+		});
+	</script>
 
 
 
