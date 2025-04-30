@@ -40,6 +40,9 @@ During this project, I gained experience in:
 
 To run the project in your local environment, follow these steps:
 
+Open the website using the github pages link: https://christianjose97.github.io/nestnook.github.io/
+
 1. Clone the repository to your local machine:
    ```bash
    git clone https://github.com/nestnook/nestnook.github.io.git
+
