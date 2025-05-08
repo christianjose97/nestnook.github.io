@@ -331,27 +331,31 @@
 
 
       <!-- Footer -->
-      <footer id="footer">
-        <ul class="icons">
-          <li>
-            <a
-              href="https://www.instagram.com/staywell_homes/"
-              class="icon brands fa-instagram"
-              ><span class="label">Instagram</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon solid fa-envelope"
-              ><span class="label">Email</span></a
-            >
-          </li>
-        </ul>
-        <ul class="copyright">
-          <li>&copy; Staywell Homes</li>
-          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-      </footer>
-    </div>
+				<footer id="footer">
+					<ul class="icons">
+					  <li>
+						<a href="https://www.instagram.com/staywell_homes/" class="icon brands fa-instagram"
+						  ><span class="label">Instagram</span></a
+						>
+					  </li>
+					  <li>
+						<a href="#" class="icon solid fa-envelope"
+						  ><span class="label">Email</span></a
+						>
+					  </li>
+					</ul>
+					<ul class="copyright">
+					  <li>&copy; <span id="current-year"></span> Staywell Homes</li>
+					  <li>Design: <a href="http://html5up.net" aria-label="Visit HTML5 UP website">HTML5 UP</a></li>
+					</ul>
+					<p class="disclaimer"></p>
+					  Staywell Homes is an Equal Housing Opportunity provider. We do not discriminate on the basis of race, color, religion, sex, disability, familial status, or national origin.
+					</p>
+					<script>
+					  document.getElementById('current-year').textContent = new Date().getFullYear();
+					</script></p>
+				  </footer>
+				</div>
 
     <!-- Scripts -->
     <script src="../assets/js/jquery.min.js"></script>
