@@ -4015,6 +4015,60 @@ input, select, textarea {
 		text-decoration: none; /* Removes any underline or dashes */
 		display: block; /* Ensures the link behaves as a block-level element */
 	  }
+
+	  .amenities-grid {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			gap: 20px;
+			margin-top: 20px;
+		}
+		.amenity-box {
+			text-align: center;
+			width: 160px;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			background-color: #f9f9f9;
+			word-break: break-word;
+		}
+		.amenity-box i {
+			font-size: 2rem;
+			color: #333;
+			margin-bottom: 10px;
+		}
+		.amenity-box p {
+			margin: 5px 0;
+		}
+		.amenity-text {
+			font-size: 0.95rem;
+			white-space: normal;
+			word-break: break-word;
+		}
+
+		.features-grid {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			gap: 20px;
+			margin-top: 20px;
+		}
+		.feature-box {
+			text-align: center;
+			width: 120px;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			background-color: #f9f9f9;
+		}
+		.feature-box i {
+			font-size: 2rem;
+			color: #333;
+			margin-bottom: 10px;
+		}
+		.feature-box p {
+			margin: 5px 0;
+		}
 	  
 
 	  
