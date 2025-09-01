@@ -3556,7 +3556,7 @@ input, select, textarea {
 		}
 
 			#header.alt h1 {
-				pointer-events: none;
+				pointer-events: auto;
 				opacity: 0;
 			}
 
