@@ -1,0 +1,8 @@
+# Redirect index.html to root
+/index.html / 301
+
+# Redirect .html extensions to clean URLs
+/*.html /:splat 301
+
+# Handle clean URLs internally
+/* /:splat.html 200
