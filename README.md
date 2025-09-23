@@ -1,4 +1,4 @@
-# 🏠 Staywell Homes
+# 🏠 Staywell Housing Solutions Manual
 
 A modern website showcasing my fully furnished 30+ day stays in Northern New Jersey business, designed for traveling professionals, relocating families, and anyone seeking flexible housing solutions.
 
@@ -33,7 +33,6 @@ During this project, I gained experience in:
 ## 🧠 How can it be improved?
 
 - Add a booking system for users to reserve stays directly on the website.
-- Include a gallery of images for each housing option.
 - Optimize performance for faster loading times.
 
 ## 👟 Running the Project
